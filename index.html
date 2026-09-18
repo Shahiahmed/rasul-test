@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlowLingo — онлайн школа казахского языка</title>
+  <meta name="description" content="Первая онлайн школа казахского языка FlowLingo">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="logo">
+          <svg class="logo__icon" width="34" height="34" viewBox="0 0 34 34" fill="none">
+            <rect x="2" y="2" width="12" height="12" rx="3" stroke="currentColor" stroke-width="2.5"/>
+            <rect x="20" y="20" width="12" height="12" rx="3" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M8 14v4a4 4 0 0 0 4 4h8" stroke="currentColor" stroke-width="2.5"/>
+          </svg>
+          <span>FlowLingo</span>
+        </a>
+
+        <nav class="nav" id="nav">
+          <a href="#about">О компании</a>
+          <a href="#advantages">Преимущества</a>
+          <a href="#gallery">Галерея</a>
+          <a href="#services">Услуги</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+
+        <div class="lang">
+          <button class="lang__btn" type="button" aria-haspopup="true" aria-expanded="false">
+            <span class="lang__current">RU</span>
+            <svg width="14" height="9" viewBox="0 0 14 9" fill="none"><path d="M1.5 1.5 7 7l5.5-5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul class="lang__list">
+            <li><button type="button" data-lang="RU">RU</button></li>
+            <li><button type="button" data-lang="KZ">KZ</button></li>
+            <li><button type="button" data-lang="EN">EN</button></li>
+          </ul>
+        </div>
+
+        <button class="burger" type="button" aria-label="Меню" aria-controls="nav" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__slides">
+        <div class="hero__slide is-active" style="background-image:url('img/hero-1.jpg')"></div>
+        <div class="hero__slide" style="background-image:url('img/hero-2.jpg')"></div>
+        <div class="hero__slide" style="background-image:url('img/hero-3.jpg')"></div>
+      </div>
+      <div class="hero__overlay"></div>
+
+      <div class="container hero__content">
+        <h1 class="hero__title">Первая онлайн школа казахского языка</h1>
+        <p class="hero__text">Предоставляем уникальные и современные методы обучения, которые помогут вам овладеть казахским языком с уверенностью и легкостью.</p>
+        <a href="#signup" class="btn">Записаться</a>
+        <div class="arrows hero__arrows">
+          <button class="arrow arrow--prev" type="button" aria-label="Назад" data-hero="prev"></button>
+          <button class="arrow arrow--next" type="button" aria-label="Вперёд" data-hero="next"></button>
+        </div>
+      </div>
+
+      <svg class="hero__wave" viewBox="0 0 1920 340" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 340 C 250 230 380 190 580 190 C 830 190 950 250 1150 250 C 1450 250 1650 170 1920 0 L1920 340 Z" fill="#fff"/>
+      </svg>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about__inner">
+        <div class="about__media">
+          <div class="about__shape about__shape--back"></div>
+          <div class="about__shape about__shape--img" style="background-image:url('img/about.jpg')"></div>
+        </div>
+        <div class="about__content">
+          <p class="subtitle">О компании</p>
+          <h2 class="title title--left">Инновационная школа казахского языка "FlowLingo"</h2>
+          <p>Добро пожаловать в “FlowLingo" – превосходную онлайн школу, специализирующуюся в изучении казахского языка.</p>
+          <p>Учите казахский язык с удовольствием и в удобное для вас время, получайте доступ к интересным учебным материалам и интерактивным заданиям, которые разработаны специально для вас. Используйте нашу инновационную систему "Казахский Flow", чтобы облегчить процесс запоминания и применения языковых навыков в реальных ситуациях.</p>
+          <p>Присоединяйтесь к "FlowLingo" сегодня и начинайте свой языковой путь к успеху и культурному обогащению через изучение казахского языка онлайн!</p>
+          <a href="#signup" class="btn">Записаться</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages section" id="advantages">
+      <div class="container">
+        <p class="subtitle">Преимущества</p>
+        <h2 class="title">Онлайн школа, открывающая<br> новые горизонты</h2>
+        <div class="advantages__grid">
+          <article class="adv">
+            <div class="adv__icon">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FF5FD0"/><stop offset="1" stop-color="#FF7A45"/></linearGradient></defs>
+                <path d="M12 16h9a5 5 0 1 1 10 0h9v9a5 5 0 1 1 0 10v9H12v-9a5 5 0 1 0 0-10z" fill="url(#g1)"/>
+                <path d="M19 23l3.5 12 3.5-9 3.5 9 3.5-12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="adv__title">Интерактивная методика</h3>
+            <p>Развивайте свою творческую силу и мастерство в языковых навыках с помощью интерактивных методов обучения.</p>
+          </article>
+          <article class="adv">
+            <div class="adv__icon">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                <defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FF5FD0"/><stop offset="1" stop-color="#FF7A45"/></linearGradient></defs>
+                <circle cx="19" cy="24" r="4.5" fill="url(#g2)"/><path d="M11 36a8 8 0 0 1 16 0v2H11z" fill="url(#g2)"/>
+                <circle cx="37" cy="24" r="4.5" fill="url(#g2)"/><path d="M29 36a8 8 0 0 1 16 0v2H29z" fill="url(#g2)"/>
+                <path d="M16 13a16 16 0 0 1 24 1m0 0v-4m0 4h-4M40 43a16 16 0 0 1-24-1m0 0v4m0-4h4" stroke="url(#g2)" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="adv__title">Обратная связь и оценка</h3>
+            <p>Получайте детальную обратную связь и персонализированную оценку вашего прогресса, что поможет вам продвигаться быстрее и эффективнее в изучении казахского языка.</p>
+          </article>
+          <article class="adv">
+            <div class="adv__icon">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                <defs><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FF5FD0"/><stop offset="1" stop-color="#FF7A45"/></linearGradient></defs>
+                <path d="M10 14h10c3 0 5 3 5 6l3 5-3 1v5c0 2-2 4-4 4h-2v7h-9z" fill="url(#g3)"/>
+                <circle cx="38" cy="22" r="9" fill="url(#g3)"/><path d="M31 29l-2 5 5-2" fill="url(#g3)"/>
+                <path d="M34 22l3 3 5-6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="adv__title">Профессиональные педагоги</h3>
+            <p>Получайте поддержку и руководство от опытных преподавателей, отличающихся экспертизой в преподавании казахского языка.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="container">
+        <p class="subtitle">Галерея</p>
+        <h2 class="title">Фотогалерея нашей Компании</h2>
+      </div>
+      <div class="carousel gallery__carousel" data-carousel>
+        <div class="carousel__track">
+          <div class="carousel__item gallery__item" style="background-image:url('img/gallery-1.jpg')"></div>
+          <div class="carousel__item gallery__item" style="background-image:url('img/gallery-2.jpg')"></div>
+          <div class="carousel__item gallery__item" style="background-image:url('img/gallery-3.jpg')"></div>
+          <div class="carousel__item gallery__item" style="background-image:url('img/gallery-4.jpg')"></div>
+          <div class="carousel__item gallery__item" style="background-image:url('img/gallery-5.jpg')"></div>
+        </div>
+        <button class="arrow arrow--prev arrow--big carousel__prev" type="button" aria-label="Назад"></button>
+        <button class="arrow arrow--next arrow--big carousel__next" type="button" aria-label="Вперёд"></button>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="container">
+        <p class="subtitle">Услуги</p>
+        <h2 class="title">Наши услуги для Вас</h2>
+        <div class="services__grid">
+          <article class="service" style="background-image:url('img/service-1.jpg')">
+            <div class="service__body">
+              <h3 class="service__title">Онлайн курс казахского языка</h3>
+              <p>Гибкий формат обучения, который позволит вам изучать казахский язык в удобное для вас время и темпе.</p>
+            </div>
+          </article>
+          <article class="service" style="background-image:url('img/service-2.jpg')">
+            <div class="service__body">
+              <h3 class="service__title">Разговорная практика</h3>
+              <p>Интерактивные занятия, направленные на развитие навыков общения на казахском языке с носителями языка.</p>
+            </div>
+          </article>
+          <article class="service" style="background-image:url('img/service-3.jpg')">
+            <div class="service__body">
+              <h3 class="service__title">Культурное погружение</h3>
+              <p>Узнайте об уникальной культуре Казахстана, истории и традициях через изучение казахского языка.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section" id="faq">
+      <div class="container container--narrow">
+        <p class="subtitle">Ответы</p>
+        <h2 class="title">Часто задаваемые вопросы</h2>
+        <div class="faq__list">
+          <details class="faq__item" open>
+            <summary>Какие форматы обучения доступны?</summary>
+            <div class="faq__answer">Мы предоставляем разнообразные форматы обучения, включая индивидуальные занятия, групповые уроки и онлайн курсы для вашего удобства.</div>
+          </details>
+          <details class="faq__item">
+            <summary>Какие уровни языка вы предлагаете для изучения?</summary>
+            <div class="faq__answer">Мы обучаем с нуля и до продвинутого уровня: A1, A2, B1, B2 и C1. Перед началом проводим бесплатное тестирование, чтобы подобрать подходящую группу.</div>
+          </details>
+          <details class="faq__item">
+            <summary>Как долго длится каждый курс?</summary>
+            <div class="faq__answer">Продолжительность одного уровня — около 3 месяцев при занятиях 2–3 раза в неделю.</div>
+          </details>
+          <details class="faq__item">
+            <summary>Какие методы обучения вы используете?</summary>
+            <div class="faq__answer">Мы сочетаем коммуникативную методику, интерактивные задания и нашу систему "Казахский Flow" для эффективного запоминания.</div>
+          </details>
+          <details class="faq__item">
+            <summary>Могу ли я получить сертификат об окончании курса?</summary>
+            <div class="faq__answer">Да, по окончании каждого уровня вы получаете сертификат FlowLingo.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners section" id="partners">
+      <div class="container">
+        <p class="subtitle">Партнеры</p>
+        <h2 class="title">Наши партнеры</h2>
+      </div>
+      <div class="partners__marquee">
+        <div class="partners__track">
+          <span class="partner">Clara Foods</span>
+          <span class="partner">MERCK</span>
+          <span class="partner">TESLA</span>
+          <span class="partner">Spotify</span>
+          <span class="partner">CapitalOne</span>
+          <span class="partner">Pfizer</span>
+          <span class="partner">patagonia</span>
+          <span class="partner">Adobe</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews section" id="reviews">
+      <div class="container">
+        <p class="subtitle">Отзывы</p>
+        <h2 class="title">Отзывы клиентов</h2>
+      </div>
+      <div class="carousel reviews__carousel" data-carousel>
+        <div class="carousel__track">
+          <article class="carousel__item review">
+            <div class="review__quote"></div>
+            <p class="review__text">Я всегда хотела изучить казахский язык, чтобы лучше понимать культуру моего мужа. Занятия в этой школе превзошли мои ожидания! Преподаватели внимательно относятся к каждому студенту, и занятия были интересными и практичными. Теперь я горжусь своим прогрессом в изучении казахского языка и могу свободно общаться с родственниками мужа</p>
+            <p class="review__author">Анастасия П., 29 лет</p>
+          </article>
+          <article class="carousel__item review">
+            <div class="review__quote"></div>
+            <p class="review__text">Изучение казахского языка стало для меня интересным и увлекательным процессом. Курс обладает отличным балансом между теорией и практикой, что позволяет применять новые знания на практике. Студии школы всегда были дружелюбны и поддерживающими, что создает приятную атмосферу во время занятий</p>
+            <p class="review__author">Дмитрий Г., 40 лет</p>
+          </article>
+          <article class="carousel__item review">
+            <div class="review__quote"></div>
+            <p class="review__text">Я училась в этой школе перед переездом в Казахстан для работы. Занятия помогли мне быстро освоить основы и легко адаптироваться в новой стране. Возможность заниматься онлайн была идеальным решением для меня — я могла заниматься из любой точки мира. Большое спасибо за поддержку и отличное качество обучения</p>
+            <p class="review__author">Наталья С., 26 лет</p>
+          </article>
+          <article class="carousel__item review">
+            <div class="review__quote"></div>
+            <p class="review__text">Долгое время я не могла найти подходящий курс казахского языка, пока не нашла эту школу. Очень рада, что выбрала именно эту! Преподаватель терпеливо всё объяснял, и даже сложные темы становятся понятными. Постепенно я стала чувствовать себя увереннее в разговорах на казахском языке, и теперь с удовольствием общаюсь с местными жителями</p>
+            <p class="review__author">Мария Л., 31 лет</p>
+          </article>
+          <article class="carousel__item review">
+            <div class="review__quote"></div>
+            <p class="review__text">Приезжая в Казахстан на рабочие командировки, я решил освоить казахский язык для улучшения деловых связей. Курсы в этой школе дали мне уверенность и необходимые навыки для общения с местными партнерами. Опытные преподаватели помогли мне научиться использовать язык в рабочих и неформальных ситуациях</p>
+            <p class="review__author">Алексей К., 34 года</p>
+          </article>
+        </div>
+        <div class="arrows reviews__arrows">
+          <button class="arrow arrow--prev arrow--dark carousel__prev" type="button" aria-label="Назад"></button>
+          <button class="arrow arrow--next arrow--dark carousel__next" type="button" aria-label="Вперёд"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="signup" id="signup">
+      <svg class="signup__wave" viewBox="0 0 1920 170" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 0 H1920 V0 C1850 30 1750 90 1650 110 C1500 140 1300 120 1100 80 C900 30 800 40 600 100 C420 160 260 180 0 80 Z" fill="#fff"/>
+      </svg>
+      <div class="container">
+        <form class="form" id="signupForm" novalidate>
+          <h2 class="form__title">Записаться на курсы</h2>
+          <p class="form__text">Заполните форму, чтобы зарегистрироваться сейчас и начать свой языковой путь!</p>
+          <label class="field">
+            <input type="text" name="name" placeholder=" " required autocomplete="name">
+            <span class="field__label">Ваше имя<i>*</i></span>
+          </label>
+          <label class="field">
+            <input type="tel" name="phone" placeholder=" " required autocomplete="tel" inputmode="tel">
+            <span class="field__label">Номер телефона<i>*</i></span>
+          </label>
+          <button class="btn btn--block" type="submit">Отправить</button>
+          <label class="check">
+            <input type="checkbox" name="agree" checked required>
+            <span class="check__box"></span>
+            <span>Нажимая кнопку “Отправить” вы соглашаетесь предоставить ваши <a href="#">персональные данные и обработку данных</a>.</span>
+          </label>
+          <p class="form__status" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="map" id="contacts">
+      <iframe src="https://yandex.ru/map-widget/v1/?ll=71.430%2C51.128&z=14&pt=71.430%2C51.128%2Cpm2vvm" title="FlowLingo на карте" loading="lazy" allowfullscreen></iframe>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="logo">
+            <svg class="logo__icon" width="34" height="34" viewBox="0 0 34 34" fill="none">
+              <rect x="2" y="2" width="12" height="12" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <rect x="20" y="20" width="12" height="12" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M8 14v4a4 4 0 0 0 4 4h8" stroke="currentColor" stroke-width="2.5"/>
+            </svg>
+            <span>FlowLingo</span>
+          </a>
+          <div class="socials">
+            <a href="#" aria-label="Threads"><svg viewBox="0 0 24 24"><path d="M16.5 11.2c-.3-2.4-1.9-3.7-4.3-3.7-1.7 0-3 .7-3.7 2m7.9 2.2c-1.2-.6-2.7-.8-4.2-.6-2 .2-3.2 1.3-3.1 2.8.1 1.4 1.5 2.3 3.2 2.2 2.6-.2 3.9-2.1 3.9-5.4 0-4.4-2.6-6.7-6.2-6.7C8 4 5 6.5 5 12s3 8 7 8c3 0 5.2-1.3 6.2-3.6"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M22 5.9c-.7.3-1.5.5-2.3.6a4 4 0 0 0 1.8-2.2c-.8.5-1.7.8-2.6 1a4 4 0 0 0-6.9 3.7A11.5 11.5 0 0 1 3.7 4.8a4 4 0 0 0 1.2 5.4c-.6 0-1.3-.2-1.8-.5 0 2 1.4 3.6 3.2 4a4 4 0 0 1-1.8.1 4 4 0 0 0 3.8 2.8A8.1 8.1 0 0 1 2 18.3 11.5 11.5 0 0 0 8.3 20c7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2-2.1z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="m10 9 5 3-5 3z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg></a>
+            <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M3.5 20.5 5 16a8.5 8.5 0 1 1 3 3z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 1c-1-.4-2.6-2-3-3l1-1-1-2z"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a>
+          </div>
+        </div>
+
+        <nav class="footer__nav">
+          <a href="#about">О компании</a>
+          <a href="#services">Услуги</a>
+          <a href="#advantages">Преимущества</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#gallery">Галерея</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+
+        <ul class="footer__contacts">
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
+            <a href="tel:+77777771122">+7 (777) 777 11 22</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M3 5h18v14H3z" /><path d="m3 6 9 7 9-7" fill="none" stroke="#fff" stroke-width="1.6"/></svg>
+            <a href="mailto:info@flowlingo.kz">info@flowlingo.kz</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            <span>г. Астана, ул. Достык 12/1</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__bottom">
+        <p>FlowLingo 2023, © Все права защищены</p>
+        <p>Разработано в Astana Creative</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#signup" class="chat-btn" aria-label="Написать нам">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M5 3h14a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3H10l-5 4v-4a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
