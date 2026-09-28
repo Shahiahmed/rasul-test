@@ -13,7 +13,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 body {
   margin: 0;
   font-family: var(--font);
@@ -311,7 +311,10 @@ ul { list-style: none; margin: 0; padding: 0; }
 }
 .adv p { max-width: 340px; margin: 0 auto; color: #444; }
 
-.carousel { position: relative; }
+.carousel {
+  position: relative;
+  overflow-x: clip;
+}
 .carousel__track { position: relative; }
 .carousel__item {
   position: absolute;
